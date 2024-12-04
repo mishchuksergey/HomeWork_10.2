@@ -1,13 +1,5 @@
 from src.processing import filter_by_state, sort_by_date
-
-from src.masks import get_mask_account, get_mask_card_number
-
 from src.widget import get_date, mask_account_card
-
-
-# print(get_mask_card_number("card_number"))
-
-# print(get_mask_account("account"))
 
 print(mask_account_card("Visa Platinum 8990922113665229"))
 
