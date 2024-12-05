@@ -20,7 +20,8 @@ git@github.com:mishchuksergey/HomeWork_10.2.git
 pip install -r requirements.txt
 ```
 
-## Тестирование
+### Тестирование
+
 Тестирование функций проводится с помощью фреймворка ***pytest***.
 Для установки наберите в консоли:
 ```python
