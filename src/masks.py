@@ -10,7 +10,7 @@ def get_mask_card_number(card_number: str) -> str:
         )
     mask = "** ****"
     mask_card_number = (
-        new_card_number[:4] + " " + new_card_number[4:6] + mask + new_card_number[12:]
+        new_card_number[:4] + " " + new_card_number[4:6] + mask + " " + new_card_number[12:]
     )
     return mask_card_number
 
