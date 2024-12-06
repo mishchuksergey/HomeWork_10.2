@@ -5,7 +5,11 @@ def filter_by_state(dictionary: list[dict], state: str) -> list[dict]:
     for date in dictionary:
         if date["state"] == state:
             new_dictionary.append(date)
-    return new_dictionary
+
+    if new_dictionary != [{}]:
+        return new_dictionary[1:]
+    else:
+        print("Некорректный статус")
 
 
 def sort_by_date(dictionary: list[dict], ascending=False) -> list[dict]:
