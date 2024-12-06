@@ -9,12 +9,16 @@ def filter_by_state(dictionary: list[dict], state: str) -> list[dict]:
     if new_dictionary != [{}]:
         return new_dictionary[1:]
     else:
-        print("Некорректный статус")
+        print("Не верно введен state")
 
 
-def sort_by_date(dictionary: list[dict], ascending=False) -> list[dict]:
+def sort_by_date(dictionary: list[dict], ascending=True) -> list[dict]:
     """Функция, которая возвращает новый список, отсортированный по дате"""
-    if ascending is False:
-        return sorted(dictionary, key=lambda ascending: ascending["date"])
-    else:
-        return sorted(dictionary, key=lambda ascending: ascending["date"], reverse=True)
+    try:
+        if ascending is False:
+            return sorted(dictionary, key=lambda ascending: ascending["date"])
+        else:
+            return sorted(dictionary, key=lambda ascending: ascending["date"], reverse=True)
+    except Exception:
+        print("Ошибка в дате")
+        raise Exception

@@ -19,12 +19,10 @@ def test_mask_account_card(input_user,separated):
                          ("Visa 451315 fd56b")],
                          )
 def test_mask_account_card_invalid(input_user_vrong):
-    """Тест на правильность ввода данных"""
+    """Тест на правильность ввода данных карты"""
     with pytest.raises(ValueError) as exc_info:
         mask_account_card(input_user_vrong)
         assert str(exc_info.value) == "Ошибка при ввводе данных"
-
-
 
 
 def test_get_date():
