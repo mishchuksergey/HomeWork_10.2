@@ -1,7 +1,7 @@
 from src.processing import filter_by_state, sort_by_date
 from src.widget import get_date, mask_account_card
 
-print(mask_account_card("Visa Platinum 8990922113665229"))
+print(mask_account_card("Счет 56878990922154165229"))
 
 print(get_date("2024-03-11T02:26:18.671407"))
 
